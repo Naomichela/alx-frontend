@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Style Guide</h1> <!-- Added tabindex for accessibility -->
+        <nav aria-label="Main navigation"> <!-- Added ARIA label -->
+            <ul>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#images">Images</a></li> <!-- Added link to Images -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>320 Stewart Avenue, Unit 12<br>New York City NY 10001</p>
+            <pre>
+<code>
+&lt;h2&gt;My title&lt;/h2&gt;
+&lt;p&gt;Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero.&lt;/p&gt;
+</code>
+            </pre>
+            <p>Curabitur sit amet turpis cursus massa mollis <mark>highlighted</mark>.</p>
+        </section>
+
+        <section id="tables">
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Director</th>
+                        <th scope="col">Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inception</td>
+                        <td>Christopher Nolan</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>The Matrix</td>
+                        <td>The Wachowskis</td>
+                        <td>1999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="images">
+            <h2>Images</h2>
+            <img src="example.jpg" alt="Example Image" style="width:100%; max-width:400px;">
+            <p>Description of the example image goes here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Connect with Us</h3>
+            <p>Follow us on social media!</p>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <address>
+                234 Washington Street<br>
+                Urbana, Illinois
+            </address>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Navigating to ' + this.innerText);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
