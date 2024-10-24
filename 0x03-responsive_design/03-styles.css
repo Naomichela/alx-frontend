@@ -1,0 +1,6 @@
+/* General Styles for Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
