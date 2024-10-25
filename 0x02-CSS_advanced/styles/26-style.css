@@ -1,0 +1,19 @@
+.card-testimonial {
+    text-align: center;
+}
+
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+}
+
+.card-testimonial .card-quote {
+    margin: 0;
+    font-size: var(--font-size-x-large);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+.card-testimonial .card-cite {
+    margin: 0;
+}
+

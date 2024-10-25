@@ -1,0 +1,36 @@
+/* Create custom properties */
+:root {
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Add transformations on the card work */
+.card-work:hover .card-image {
+    transform: scale(1.2);
+}
+
+/* Target the card-outer when card-work is hovered */
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
+
+/* Add animations on the navigation items */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Animate the button background */
+.button:hover {
+    transition: var(--transition-duration);
+    transition-property: color, background-color;
+}
+
+/* Add transitions on the card works */
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+

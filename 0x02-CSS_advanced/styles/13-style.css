@@ -1,0 +1,16 @@
+a[href] {
+    /* styles for links containing a hyperlink */
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
